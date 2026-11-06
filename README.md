@@ -1,2 +1,2 @@
 # ClimateChange
-Global carbon statistics
+Global carbon statistics [EU, Japan]
