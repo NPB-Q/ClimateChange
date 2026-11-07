@@ -7,6 +7,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # Tells GitHub Actions to go inside the HelloWorldApp folder for all steps
+    defaults:
+      run:
+        working-directory: ./HelloWorldApp
+
     steps:
     - uses: actions/checkout@v4
 
@@ -26,4 +32,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: HelloWorldApp/app/build/outputs/apk/debug/app-debug.apk
